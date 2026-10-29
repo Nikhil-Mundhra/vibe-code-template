@@ -12,7 +12,7 @@ When an AI agent is initialized in a new project using this template, consult:
 1. [`AGENTS.md`](AGENTS.md) — Canonical agent directives, communication rules, and runtime guardrails.
 2. [`INITIAL_AGENT_INSTRUCTIONS.md`](INITIAL_AGENT_INSTRUCTIONS.md) — Initial onboarding checklist:
    - **Step 1:** Classify project type and trim the skill suite (`python3 scripts/trim_skills.py --preset <type>`).
-   - **Step 2:** If the project requirements are complex, research an online template (<10k commits) and curl download it.
+   - **Step 2:** If the project requirements are complex, research an online template (<5k commits) and curl download it.
    - **Step 3:** Update this README with the list of removed skills.
    - **Step 4:** Reference the visual aesthetic archetypes (particles, Delaunay, topography, 3D WebGL) in [`INITIAL_AGENT_INSTRUCTIONS.md`](INITIAL_AGENT_INSTRUCTIONS.md) when building frontend/creative interfaces.
 

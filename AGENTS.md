@@ -31,10 +31,10 @@ Assess the project requirements, architecture, and technology stack. Do not keep
 If the project requirements are complex, specialized, or involve intricate boilerplate (e.g., custom WebGL pipelines, auth with multi-tenancy, cross-platform mobile, novel deep learning architectures):
 1. **Anticipate architectural friction:** Identify standard patterns, libraries, and structures needed early rather than scaffolding everything from scratch.
 2. **Research an online reference repository:** Use search tools or GitHub API to find an open-source template or reference project that fits the tech stack.
-3. **The 10,000 Commits Rule (Mandatory):**
-   - **NEVER use repositories with over 10,000 commits as templates.**
-   - *Rationale:* Giant repositories (>10k commits) are typically enterprise monorepos or legacy codebases. They suffer from bloat, obscure build tooling, massive dependency trees, deprecated configurations, and excessive token overhead that degrade agent performance.
-   - Look for clean, focused, modular starters or templates with under 10,000 commits (ideally 100 to 2,000 commits).
+3. **The 5,000 Commits Rule (Mandatory):**
+   - **NEVER use repositories with over 5,000 commits as templates.**
+   - *Rationale:* Giant repositories (>5k commits) are typically enterprise monorepos or legacy codebases. They suffer from bloat, obscure build tooling, massive dependency trees, deprecated configurations, and excessive token overhead that degrade agent performance.
+   - Look for clean, focused, modular starters or templates with under 5,000 commits (ideally 100 to 2,000 commits).
 4. **Curl and download the archive:**
    - Download the clean tarball/zip directly to avoid dragging in external git histories:
      ```bash

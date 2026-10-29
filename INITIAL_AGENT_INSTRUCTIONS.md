@@ -20,7 +20,7 @@ This document specifies the initial bootstrapping checklist for any AI coding ag
  │ 3. Anticipate Complexity & Online Template Discovery        │
  │    ├── Check for intricate requirements                     │
  │    ├── Search GitHub for fitting starters                   │
- │    ├── Hard Rule: AVOID repos > 10,000 commits              │
+ │    ├── Hard Rule: AVOID repos > 5,000 commits               │
  │    └── Curl download & unpack clean archive                 │
  └─────────────────────────────────────────────────────────────┘
 ```
@@ -65,11 +65,11 @@ Identify high-risk architectural decisions before writing initial code. Determin
 ### B. Search for an Open Source Reference
 Search online (GitHub, GitLab, or verified template registries) for a focused template repository that matches the tech stack.
 
-### C. The 10,000 Commits Rule
+### C. The 5,000 Commits Rule
 > [!IMPORTANT]
-> **Strictly avoid repositories with over 10,000 commits as templates.**
-> Repositories with >10,000 commits are monolithic, contain years of legacy baggage, use complex custom monorepo tooling, and introduce bloat that slows down builds and pollutes context windows.
-> Choose concise, modern starter repositories with clean commits (ideally under 2,000 commits, never over 10,000).
+> **Strictly avoid repositories with over 5,000 commits as templates.**
+> Repositories with >5,000 commits are monolithic, contain years of legacy baggage, use complex custom monorepo tooling, and introduce bloat that slows down builds and pollutes context windows.
+> Choose concise, modern starter repositories with clean commits (ideally under 2,000 commits, never over 5,000).
 
 ### D. Curl and Download the Starter
 Never clone large histories with `.git`. Instead, download the archive tarball directly:
