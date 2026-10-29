@@ -1,0 +1,218 @@
+{
+  "cnn-unet-architect": {
+    "name": "cnn-unet-architect",
+    "category": "Deep Learning & Medical Computer Vision",
+    "description": "Architectural specifications, tensor dimension contracts, mathematical loss formulations, and design rules for building medical CNN and U-Net models for ophthalmic OCT layer segmentation.",
+    "path": ".agents/skills/cnn-unet-architect"
+  },
+  "cohort-dataset-splitting": {
+    "name": "cohort-dataset-splitting",
+    "category": "Deep Learning & Medical Computer Vision",
+    "description": "Clinical ophthalmic OCT dataset auditing, QC outlier filtering, and zero-leakage stratified train/validation cohort splitting.",
+    "path": ".agents/skills/cohort-dataset-splitting"
+  },
+  "competence50-course-builder": {
+    "name": "competence50-course-builder",
+    "category": "Specialized Domain, Auditing & Demos",
+    "description": "Scaffolds, manages, or validates the 5-module Competence 5.0 course structure with the 3 content lanes (Preparation, During Training, Between Trainings) and knowledge test access restrictions. Use when updating course content models or completion gating.",
+    "path": ".agents/skills/competence50-course-builder"
+  },
+  "data-lake-and-zone-architecture": {
+    "name": "data-lake-and-zone-architecture",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through data lake and zone architecture design. Use when defining raw, refined, curated, or publish layers; storage organization; retention; and operational boundaries for a data lake.",
+    "path": ".agents/skills/data-lake-and-zone-architecture"
+  },
+  "data-quality-and-contract-testing": {
+    "name": "data-quality-and-contract-testing",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Drives data implementation with contracts, assertions, and validation evidence. Use when adding or changing ingestion logic, transformations, schemas, or published data products.",
+    "path": ".agents/skills/data-quality-and-contract-testing"
+  },
+  "data-reconciliation-and-financial-controls": {
+    "name": "data-reconciliation-and-financial-controls",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through reconciliation and control design for business-critical data. Use when validating financial, operational, or audit-sensitive metrics with source-to-target totals, control balances, exception tracking, or close-process dependencies.",
+    "path": ".agents/skills/data-reconciliation-and-financial-controls"
+  },
+  "dct-tourism-hackathon-reviewer": {
+    "name": "dct-tourism-hackathon-reviewer",
+    "category": "Specialized Domain, Auditing & Demos",
+    "description": "Review, score, and improve submissions for the Advanced Technology Pioneers 2026 DCT Abu Dhabi flight-to-hotel-demand challenge. Use for hackathon judging, repository audits, model-validation reviews, submission readiness checks, or judge-question preparation for this challenge. Do not apply to the unrelated EDGE or ENEC tracks.",
+    "path": ".agents/skills/dct-tourism-hackathon-reviewer"
+  },
+  "diagnose-model-health": {
+    "name": "diagnose-model-health",
+    "category": "Deep Learning & Medical Computer Vision",
+    "description": "Runs a strict, predefined battery of diagnostic tests against a model checkpoint to verify network health, detect mode collapse, test tensor scaling, and validate Grad-CAM explainability outputs. Aggregates results into a single markdown report.",
+    "path": ".agents/skills/diagnose-model-health"
+  },
+  "docmancer": {
+    "name": "docmancer",
+    "category": "Codebase & Documentation Navigation",
+    "description": "Query local context, fetch public documentation, and retrieve API references using the docmancer CLI.",
+    "path": ".agents/skills/docmancer"
+  },
+  "document-manipulation": {
+    "name": "document-manipulation",
+    "category": "Publishing, Diagrams & Content Polish",
+    "description": "Toolkit for manipulating documents including docx to mdx/html conversions and markdown to PDF.",
+    "path": ".agents/skills/document-manipulation"
+  },
+  "duckdb-local-analytics-and-dev": {
+    "name": "duckdb-local-analytics-and-dev",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through DuckDB-based local analytics and development workflows. Use when prototyping models locally, validating transformations, reproducing data issues quickly, or building lightweight analytical tooling without a full warehouse.",
+    "path": ".agents/skills/duckdb-local-analytics-and-dev"
+  },
+  "esf-audit-verification": {
+    "name": "esf-audit-verification",
+    "category": "Specialized Domain, Auditing & Demos",
+    "description": "Audits, tests, and verifies ESF+ compliance data in Competence 5.0 LMS. Use when validating participant Digital IDs, recalculating HMAC checksums, checking audit log completeness, or testing the ESF+ reporting pack exports.",
+    "path": ".agents/skills/esf-audit-verification"
+  },
+  "feature-store-and-ml-data-pipelines": {
+    "name": "feature-store-and-ml-data-pipelines",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through machine-learning data pipelines and feature serving workflows. Use when designing feature generation, offline and online consistency, training-serving parity, point-in-time correctness, or ML-oriented data product contracts.",
+    "path": ".agents/skills/feature-store-and-ml-data-pipelines"
+  },
+  "file-and-partner-feed-ingestion": {
+    "name": "file-and-partner-feed-ingestion",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through file-based and partner-feed ingestion workflows. Use when landing data from SFTP, managed file transfer, shared buckets, recurring flat files, manifests, or externally supplied feeds that need validation, replay safety, and publish discipline.",
+    "path": ".agents/skills/file-and-partner-feed-ingestion"
+  },
+  "github-issues": {
+    "name": "github-issues",
+    "category": "Core Quality & Refactoring",
+    "description": "End-to-end toolkit for agents to inspect, audit, verify against codebase and git history, and safely close GitHub issues. Use when triaging issues, checking milestone/track progress, verifying requirements, running audit matrices, or closing completed issues.",
+    "path": ".agents/skills/github-issues"
+  },
+  "glassmorphism-ui": {
+    "name": "glassmorphism-ui",
+    "category": "Frontend, UI/UX & Design Systems",
+    "description": "Framework-agnostic rules for building frosted-glass (glassmorphism) interfaces. Use when asked for glass UI, frosted panels, translucent or blurred surfaces, layered depth, or a liquid/blob animated background. Covers blur tiers, alpha ramps, border recipes, layer stacking, component states, and WCAG 2.2 AA safeguards. Applies to CSS, Compose, SwiftUI, and React Native; not to one stack.",
+    "path": ".agents/skills/glassmorphism-ui"
+  },
+  "graphify": {
+    "name": "graphify",
+    "category": "Codebase & Documentation Navigation",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+    "path": ".agents/skills/graphify"
+  },
+  "greeting-demo": {
+    "name": "greeting-demo",
+    "category": "Specialized Domain, Auditing & Demos",
+    "description": "Greet the user in a distinctive, easy-to-verify format for skill activation demos.",
+    "path": ".agents/skills/greeting-demo"
+  },
+  "humanizer": {
+    "name": "humanizer",
+    "category": "Publishing, Diagrams & Content Polish",
+    "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, or filler. Based on Wikipedia's \"Signs of AI writing.\"",
+    "path": ".agents/skills/humanizer"
+  },
+  "kaggle": {
+    "name": "kaggle",
+    "category": "Deep Learning & Medical Computer Vision",
+    "description": "MANDATORY skill for deploying, writing, running, or debugging model training scripts on Kaggle. Enforces critical rules for preventing DataLoader deadlocks, tail-batch crashes (batch-size 1 squeeze traps), shared memory OOMs, multi-GPU setup, medical spatial augmentation rules, and mandatory local pre-flight smoke testing.",
+    "path": ".agents/skills/kaggle"
+  },
+  "klara-suggestions": {
+    "name": "klara-suggestions",
+    "category": "Frontend, UI/UX & Design Systems",
+    "description": "Guidelines and architectural rules for debugging, modifying, or extending the Klara Suggestion Cards (SuggestionsTab.tsx) and Office.js integration (word-context.ts). Use this skill when working on the frontend Word add-in taskpane.",
+    "path": ".agents/skills/klara-suggestions"
+  },
+  "macbook-cnn-training": {
+    "name": "macbook-cnn-training",
+    "category": "Deep Learning & Medical Computer Vision",
+    "description": "Execution rules, DataLoader worker limits, Unified Memory management, and backbone preservation protocols for PyTorch CNN training on Apple Silicon Macbooks (MPS).",
+    "path": ".agents/skills/macbook-cnn-training"
+  },
+  "master-data-and-entity-resolution": {
+    "name": "master-data-and-entity-resolution",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through master data and entity resolution workflows. Use when matching identities across systems, defining canonical entities, resolving duplicates, or building golden records for shared downstream use.",
+    "path": ".agents/skills/master-data-and-entity-resolution"
+  },
+  "notebook-to-production-hardening": {
+    "name": "notebook-to-production-hardening",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through converting exploratory notebooks into production-ready data jobs. Use when operationalizing notebooks from Databricks, Jupyter, or similar environments into tested, packaged, repeatable workflows.",
+    "path": ".agents/skills/notebook-to-production-hardening"
+  },
+  "python-data-engineering-and-pipeline-packaging": {
+    "name": "python-data-engineering-and-pipeline-packaging",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through Python-based data engineering implementation. Use when building or modifying Python ingestion jobs, orchestration helpers, PySpark entry points, validation code, packaging, dependency management, or operational CLI workflows.",
+    "path": ".agents/skills/python-data-engineering-and-pipeline-packaging"
+  },
+  "python-scratchpad": {
+    "name": "python-scratchpad",
+    "category": "Core Quality & Refactoring",
+    "description": "Use the existing Python execution tools as a scratchpad for calculations, data transformation, and quick script-based validation.",
+    "path": ".agents/skills/python-scratchpad"
+  },
+  "quality-assurance": {
+    "name": "quality-assurance",
+    "category": "Core Quality & Refactoring",
+    "description": "Automatic quality control, testing patterns, and static analysis procedures. Covers linting, formatting, test suite architecture (Unit/Integration/E2E), and mocking strategies.",
+    "path": ".agents/skills/quality-assurance"
+  },
+  "refactor": {
+    "name": "refactor",
+    "category": "Core Quality & Refactoring",
+    "description": "Surgical code refactoring to improve maintainability without changing external behavior. Covers extracting functions, renaming variables, breaking down god functions, improving type safety, eliminating code smells, and applying design patterns. Use for gradual improvements.",
+    "path": ".agents/skills/refactor"
+  },
+  "rest-api-caller": {
+    "name": "rest-api-caller",
+    "category": "Core Quality & Refactoring",
+    "description": "Call REST APIs from Python, parse JSON responses, and report the useful fields back to the user.",
+    "path": ".agents/skills/rest-api-caller"
+  },
+  "run-opencode": {
+    "name": "run-opencode",
+    "category": "Core Quality & Refactoring",
+    "description": "Run OpenCode CLI for AI-powered code analysis, refactoring, and troubleshooting. Use for direct prompts, file context analysis, and terminal output processing. Optimized for use with a weaker local model \u2014 tasks are scoped narrowly, constrained explicitly, and verified after every run.",
+    "path": ".agents/skills/run-opencode"
+  },
+  "run-segmentation-training": {
+    "name": "run-segmentation-training",
+    "category": "Deep Learning & Medical Computer Vision",
+    "description": "Executes the advanced fine-tuning training loop for the Hierarchical U-Net segmentation model on the OCT5K and Base datasets. Trigger this when asked to start or run the segmentation model training.",
+    "path": ".agents/skills/run-segmentation-training"
+  },
+  "scientific-diagram-architect": {
+    "name": "scientific-diagram-architect",
+    "category": "Publishing, Diagrams & Content Polish",
+    "description": "Architectural specifications, aesthetic palettes, mathematical layout formulas, and high-fidelity vector-to-raster rendering pipelines for scientific and ML architecture SVG diagrams.",
+    "path": ".agents/skills/scientific-diagram-architect"
+  },
+  "semantic-layer-and-metric-governance": {
+    "name": "semantic-layer-and-metric-governance",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through semantic layer and shared metric design. Use when defining business metrics, reusable dimensions, governed metric contracts, or shared semantic models consumed by dashboards, analytics tools, or other teams.",
+    "path": ".agents/skills/semantic-layer-and-metric-governance"
+  },
+  "totalsegmentator": {
+    "name": "totalsegmentator",
+    "category": "Deep Learning & Medical Computer Vision",
+    "description": "Use for requests involving medical-image files or image-based analysis, especially CT or MR, including anatomy or pathology detection, segmentation, mask creation, modality detection, contrast-phase estimation, quantitative measurements, and body-statistics estimation. Check TotalSegmentator capabilities before using custom code, shell commands, or general imaging tools.",
+    "path": ".agents/skills/totalsegmentator"
+  },
+  "warehouse-and-schema-design": {
+    "name": "warehouse-and-schema-design",
+    "category": "Enterprise Data Engineering & Lakehouse",
+    "description": "Guides agents through data warehouse and schema design. Use when defining fact and dimension models, keys, grain, normalization versus denormalization, serving-layer schema boundaries, and downstream-friendly table design.",
+    "path": ".agents/skills/warehouse-and-schema-design"
+  },
+  "wealth-advisor-ui": {
+    "name": "wealth-advisor-ui",
+    "category": "Frontend, UI/UX & Design Systems",
+    "description": "Design and build UI for the wealth advisor frontend (React 19, Tailwind 4, CVA, React Hook Form, React Query). Use this skill whenever creating or changing any screen, component, form, table, chart, empty or error state, or styling in the frontend folder, and whenever the user says things like \"make it look better\", \"polish\", \"redesign\", \"add a page\", or \"build a component\", even if they never mention design. Enforces the product's visual identity, design tokens, state coverage, accessibility, and a self review loop so output does not look like generic AI generated UI.",
+    "path": ".agents/skills/wealth-advisor-ui"
+  }
+}
