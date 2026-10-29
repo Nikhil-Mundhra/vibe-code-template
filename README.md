@@ -14,6 +14,7 @@ When an AI agent is initialized in a new project using this template, consult:
    - **Step 1:** Classify project type and trim the skill suite (`python3 scripts/trim_skills.py --preset <type>`).
    - **Step 2:** If the project requirements are complex, research an online template (<10k commits) and curl download it.
    - **Step 3:** Update this README with the list of removed skills.
+   - **Step 4:** Reference the visual aesthetic archetypes (particles, Delaunay, topography, 3D WebGL) in [`INITIAL_AGENT_INSTRUCTIONS.md`](INITIAL_AGENT_INSTRUCTIONS.md) when building frontend/creative interfaces.
 
 ---
 
@@ -105,3 +106,14 @@ _No skills removed yet. Full suite intact._
 - **macOS Port Guard:** Port 5001 for backend servers (avoiding macOS AirPlay on port 5000); port 3000 for frontend servers.
 - **No Inline Terminal Python:** Never run `python3 -c "..."`. Write dedicated scratch script files.
 - **Verification First:** Run automated test suites before visual inspections; require zero errors and zero warnings before committing.
+
+---
+
+## Visual Aesthetics & Generative Motion Archetypes
+
+When developing frontend interfaces or interactive backgrounds, consult the four core design archetypes documented in [`INITIAL_AGENT_INSTRUCTIONS.md`](INITIAL_AGENT_INSTRUCTIONS.md):
+
+1. **Constellation & Particle Physics:** ([particles.js](https://github.com/VincentGarreau/particles.js/)) — Minimalist 2D canvas particle networks, Euclidean proximity linking, and interactive mouse repulsion/grab.
+2. **Algorithmic Delaunay Geometry:** ([Trianglify](https://github.com/qrohlf/trianglify)) — Low-poly Delaunay triangulation, Poisson-disc sampling, and crystalline chromatic color palettes.
+3. **Organic Cartographic Isoline Topography:** ([Gradient Topography Animation](https://github.com/codrops/GradientTopographyAnimation/)) — Concentric SVG contour morphing with Anime.js and rich multi-stop gradient meshes.
+4. **Turnkey 3D WebGL Environments:** ([Vanta.js](https://github.com/tengbao/vanta)) — Turnkey Three.js animated worlds (Birds, Waves, Fog, Clouds, Net, Topology) with cursor reactivity.

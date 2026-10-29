@@ -127,3 +127,30 @@ When assigned multiple features, tasks, or bug fixes in a single session, decide
 3. **Naming Conventions:**
    - Internal documentation files use `kebab-case.md` (e.g., `initial-agent-instructions.md`).
    - Workspace root markers remain uppercase (`AGENTS.md`, `README.md`, `LICENSE`).
+
+---
+
+## 7. Visual Aesthetics & Generative Motion Archetypes
+
+When designing user interfaces, creative landing pages, or ambient canvas backgrounds, agents should reference these four core generative visual archetypes rather than defaulting to generic static styles:
+
+1. **Constellation & Interactive Particle Physics:** ([particles.js](https://github.com/VincentGarreau/particles.js/))
+   - *Design Philosophy:* Declarative, zero-dependency 2D canvas particle physics. Treats Euclidean mathematical proximity as an emergent connective fabric, simulating interconnected networks, neural synapses, and living digital matter.
+   - *Aesthetic Style & Motion:* Minimalist floating points with subtle linear drift, delicate linking segments that form and dissolve dynamically, and responsive mouse physics (repulse, grab, and burst).
+   - *Best Used For:* Technical landing pages, Web3/crypto protocols, developer portfolios, and cybersecurity or AI network dashboards.
+
+2. **Algorithmic Low-Poly Delaunay Geometry:** ([Trianglify](https://github.com/qrohlf/trianglify))
+   - *Design Philosophy:* Computational order emerging from controlled randomness. Utilizes Poisson-disc or jittered-grid point distributions combined with Delaunay triangulation to bridge mathematical algorithms with generative color theory.
+   - *Aesthetic Style & Motion:* Crisp, low-poly faceted meshes, smooth chromatic gradients interpolated across triangle centroids, and crystalline, jewel-like vector backdrops.
+   - *Best Used For:* High-resolution hero banners, printable graphic assets, tech event posters, and mathematically structured brand identities.
+
+3. **Organic Cartographic Isoline Topography:** ([Gradient Topography Animation](https://github.com/codrops/GradientTopographyAnimation/))
+   - *Design Philosophy:* Translating elevation cartography into animated editorial art. Combines contour lines (isolines) with fluid generative SVG morphing and multi-stop color meshes to create an organic, breathing landscape.
+   - *Aesthetic Style & Motion:* Concentric undulating contour curves morphing and rotating via Anime.js with staggered easings, paired with saturated duotone and sunset gradient meshes (magentas, oranges, deep purples, and midnight blues).
+   - *Best Used For:* High-fashion digital design, creative agency portfolios, editorial storytelling, and modern generative SaaS landing pages.
+
+4. **Turnkey 3D WebGL Ambient Environments:** ([Vanta.js](https://github.com/tengbao/vanta) / [vantajs.com](https://www.vantajs.com))
+   - *Design Philosophy:* Democratizing complex 3D WebGL shaders and procedural simulation into a plug-and-play, single-function background layer without boilerplate GLSL setup.
+   - *Aesthetic Style & Motion:* Immersive 3D motion: boids flocking simulation (`Birds`), specular sine-wave heightmaps (`Waves`), volumetric noise fields (`Fog`, `Clouds`), and 3D spatial node webs (`Net`), continuously reacting to cursor movement, scroll parallax, and camera angle.
+   - *Best Used For:* High-impact SaaS hero sections, experiential marketing portals, interactive product launches, and immersive spatial web apps.
+
