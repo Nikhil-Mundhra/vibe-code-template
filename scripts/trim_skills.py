@@ -47,6 +47,7 @@ PRESETS = {
         "run-segmentation-training",
         "totalsegmentator",
         "scientific-diagram-architect",
+        "ipmi-visual-architect",
     ],
     "data-engineering": [
         "refactor",

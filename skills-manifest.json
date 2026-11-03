@@ -113,6 +113,12 @@
     "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, or filler. Based on Wikipedia's \"Signs of AI writing.\"",
     "path": ".agents/skills/humanizer"
   },
+  "ipmi-visual-architect": {
+    "name": "ipmi-visual-architect",
+    "category": "Publishing, Diagrams & Content Polish",
+    "description": "Architectural specifications, aesthetic palettes, Springer LNCS dimension contracts, vector-raster hybrid standards, and Python/Matplotlib/TikZ generation pipelines for publication-grade IPMI and medical imaging diagrams.",
+    "path": ".agents/skills/ipmi-visual-architect"
+  },
   "kaggle": {
     "name": "kaggle",
     "category": "Deep Learning & Medical Computer Vision",
