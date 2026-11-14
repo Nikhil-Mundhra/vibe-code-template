@@ -1,6 +1,6 @@
 # vibe-code-template
 
-A universal, agentic repository template pre-configured with 36 battle-tested agent skills, disciplined engineering principles, and automated onboarding workflows.
+A universal, agentic repository template pre-configured with 38 battle-tested agent skills, disciplined engineering principles, and automated onboarding workflows.
 
 Designed for AI coding agents and engineers to rapidly initialize clean, high-velocity projects without starting from an empty directory.
 
@@ -38,6 +38,18 @@ python3 scripts/trim_skills.py --remove totalsegmentator,kaggle,esf-audit-verifi
 
 `trim_skills.py` will delete the unneeded `.agents/skills/<name>` directories and automatically regenerate the Active vs. Removed skills tables below.
 
+### Adding Ecosystem Skills
+
+To install additional community skills into the template or global environment:
+
+```bash
+# Add globally (available across all projects and agents)
+npx skills add nutlope/hallmark -g
+
+# Or add locally to the current repository (.agents/skills)
+npx skills add nutlope/hallmark
+```
+
 ---
 
 ## Active Skills
@@ -64,7 +76,9 @@ python3 scripts/trim_skills.py --remove totalsegmentator,kaggle,esf-audit-verifi
 | `glassmorphism-ui` | Frontend, UI/UX & Design Systems | Framework-agnostic rules for building frosted-glass (glassmorphism) interfaces and backdrop filters. |
 | `graphify` | Codebase & Documentation Navigation | Use for questions about a codebase, architecture, file relationships, or project content via knowledge graph. |
 | `greeting-demo` | Specialized Domain, Auditing & Demos | Greet the user in a distinctive, easy-to-verify format for skill activation demos. |
+| `hallmark` | Frontend, UI/UX & Design Systems | Design skill for websites and new pages that look designed, not generated. |
 | `humanizer` | Publishing, Diagrams & Content Polish | Rewrite AI-sounding text so it reads naturally without changing what it says. |
+| `ipmi-visual-architect` | Publishing, Diagrams & Content Polish | Architectural specifications and vector-raster hybrid standards for publication-grade diagrams. |
 | `kaggle` | Deep Learning & Medical Computer Vision | Mandatory skill for deploying, writing, running, or debugging model training scripts on Kaggle. |
 | `klara-suggestions` | Frontend, UI/UX & Design Systems | Guidelines and architectural rules for debugging, modifying, or extending Klara Suggestion Cards. |
 | `macbook-cnn-training` | Deep Learning & Medical Computer Vision | Execution rules, DataLoader worker limits, and Unified Memory management for PyTorch on Apple Silicon. |

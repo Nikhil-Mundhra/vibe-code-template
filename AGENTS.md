@@ -1,6 +1,6 @@
 # Global Agent Directives — Vibe Code Template
 
-Welcome to the **Vibe Code Template**. This repository serves as the universal springboard for building high-velocity, production-grade applications. It provides a curated suite of 36 battle-tested agent skills and foundational engineering directives.
+Welcome to the **Vibe Code Template**. This repository serves as the universal springboard for building high-velocity, production-grade applications. It provides a curated suite of 38 battle-tested agent skills and foundational engineering directives.
 
 ---
 

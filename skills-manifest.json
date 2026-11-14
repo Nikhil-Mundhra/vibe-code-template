@@ -107,6 +107,12 @@
     "description": "Greet the user in a distinctive, easy-to-verify format for skill activation demos.",
     "path": ".agents/skills/greeting-demo"
   },
+  "hallmark": {
+    "name": "hallmark",
+    "category": "Frontend, UI/UX & Design Systems",
+    "description": "Design skill for websites and new pages that look designed, not generated. Use when the user asks to build or design something new, or names Hallmark. Never use it on an existing design unless the user names Hallmark, as in /hallmark redesign <path>.",
+    "path": ".agents/skills/hallmark"
+  },
   "humanizer": {
     "name": "humanizer",
     "category": "Publishing, Diagrams & Content Polish",

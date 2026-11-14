@@ -30,6 +30,7 @@ PRESETS = {
         "rest-api-caller",
         "glassmorphism-ui",
         "wealth-advisor-ui",
+        "hallmark",
         "humanizer",
         "github-issues",
     ],
