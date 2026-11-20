@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-trim_skills.py — Skill Suite Trimmer & README Synchronizer
+trim_skills.py: Skill Suite Trimmer & README Synchronizer
 
 Trims the .agents/skills/ suite down to only the skills relevant to the current
 project type, and synchronizes the active vs. removed skill lists in README.md.

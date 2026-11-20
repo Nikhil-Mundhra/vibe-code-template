@@ -1,6 +1,16 @@
-# Global Agent Directives — Vibe Code Template
+# Global Agent Directives: Vibe Code Template
 
 Welcome to the **Vibe Code Template**. This repository serves as the universal springboard for building high-velocity, production-grade applications. It provides a curated suite of 39 battle-tested agent skills and foundational engineering directives.
+
+> [!IMPORTANT]
+> ### STOP AND READ FIRST: Core Invariants
+> Every AI agent operating in this repository must obey these 6 non-negotiable rules:
+> 1. **Anti-Drift & Scope Lockdown:** Touch ONLY files directly required for the user prompt. Never perform unrequested refactoring, cleanup, formatting overhauls, or architecture changes.
+> 2. **Mandatory Onboarding Check:** Before writing application code in a new project, execute the 3-step onboarding protocol (trim skills to preset, check template repos <5k commits, update README).
+> 3. **Strict No Emojis:** Never output Unicode emojis anywhere (code, UI copy, comments, logs, commit messages, docs). Use square-bracketed badges like `[INFO]`, `[PASS]`, `[FAIL]`.
+> 4. **Strict No Em-Dashes:** Never emit em-dashes (`—` or `&mdash;`). Use standard hyphens `-`, commas, or colons.
+> 5. **macOS Port Safety:** Port 5000 is reserved by macOS AirPlay. Use port 5001 for backend servers, port 3000 for frontend servers.
+> 6. **No Inline Python:** Never run `python3 -c "..."` or heredocs in terminal commands. Write a dedicated script in `scratch/` and run it.
 
 ---
 
@@ -153,4 +163,32 @@ When designing user interfaces, creative landing pages, or ambient canvas backgr
    - *Design Philosophy:* Democratizing complex 3D WebGL shaders and procedural simulation into a plug-and-play, single-function background layer without boilerplate GLSL setup.
    - *Aesthetic Style & Motion:* Immersive 3D motion: boids flocking simulation (`Birds`), specular sine-wave heightmaps (`Waves`), volumetric noise fields (`Fog`, `Clouds`), and 3D spatial node webs (`Net`), continuously reacting to cursor movement, scroll parallax, and camera angle.
    - *Best Used For:* High-impact SaaS hero sections, experiential marketing portals, interactive product launches, and immersive spatial web apps.
+
+---
+
+## 8. Anti-Drift & Scope Lockdown Protocol
+
+Agents often fail by working sideways: bikeshedding peripheral files, refactoring working code, adding unrequested dependencies, or diverging from explicit requirements. Follow these strict operational boundaries:
+
+### 1. Blast Radius Containment
+- Modify only the files directly implicated by the user request.
+- If a task touches a specific module or component, do not edit unrelated utilities, configs, or styling unless explicitly directed.
+- Ask for clarification before expanding scope rather than assuming permission.
+
+### 2. Zero Unsolicited Refactoring
+- Never "clean up" or restructure working code that happens to be open in your context.
+- Never reformat entire files that have only a one-line change; keep diffs minimal and surgical.
+- Never add speculative abstractions, factories, or helper libraries for "future extensibility."
+
+### 3. Pre-Flight Mechanical Validation
+- Before declaring work complete, run automated compliance and quality checks:
+  ```bash
+  # Check rule compliance (no emojis, no em-dashes, port safety)
+  python3 scripts/check_compliance.py
+
+  # Run lightweight unit tests
+  npm test # or pytest
+  ```
+- If compliance checks fail, fix violations immediately before committing or responding to the user.
+
 
