@@ -65,6 +65,12 @@
     "description": "Guides agents through DuckDB-based local analytics and development workflows. Use when prototyping models locally, validating transformations, reproducing data issues quickly, or building lightweight analytical tooling without a full warehouse.",
     "path": ".agents/skills/duckdb-local-analytics-and-dev"
   },
+  "edge-case-review": {
+    "name": "edge-case-review",
+    "category": "Core Quality & Refactoring",
+    "description": "Systematic edge-case review framework, 20-point product/UX catalog, layer-by-layer engineering checklist, risk-discoverability prioritization, and QA spec-readiness rules for PRDs, UI states, APIs, databases, background jobs, and algorithms. Trigger before coding a complex feature/spec, when auditing endpoints/UI flows for failure modes, or writing failing tests.",
+    "path": ".agents/skills/edge-case-review"
+  },
   "esf-audit-verification": {
     "name": "esf-audit-verification",
     "category": "Specialized Domain, Auditing & Demos",

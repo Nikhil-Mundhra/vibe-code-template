@@ -33,6 +33,7 @@ PRESETS = {
         "hallmark",
         "humanizer",
         "github-issues",
+        "edge-case-review",
     ],
     "deep-learning": [
         "refactor",

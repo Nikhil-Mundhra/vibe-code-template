@@ -1,6 +1,6 @@
 # vibe-code-template
 
-A universal, agentic repository template pre-configured with 38 battle-tested agent skills, disciplined engineering principles, and automated onboarding workflows.
+A universal, agentic repository template pre-configured with 39 battle-tested agent skills, disciplined engineering principles, and automated onboarding workflows.
 
 Designed for AI coding agents and engineers to rapidly initialize clean, high-velocity projects without starting from an empty directory.
 
@@ -69,6 +69,7 @@ npx skills add nutlope/hallmark
 | `docmancer` | Codebase & Documentation Navigation | Query local context, fetch public documentation, and retrieve API references using the docmancer CLI. |
 | `document-manipulation` | Publishing, Diagrams & Content Polish | Toolkit for manipulating documents including docx to mdx/html conversions and markdown to PDF. |
 | `duckdb-local-analytics-and-dev` | Enterprise Data Engineering & Lakehouse | Guides agents through DuckDB-based local analytics and rapid development workflows. |
+| `edge-case-review` | Core Quality & Refactoring | Systematic edge-case review framework, 20-point catalog, and layer-by-layer checklist before coding. |
 | `esf-audit-verification` | Specialized Domain, Auditing & Demos | Audits, tests, and verifies ESF+ compliance data in Competence 5.0 LMS. |
 | `feature-store-and-ml-data-pipelines` | Enterprise Data Engineering & Lakehouse | Guides agents through machine-learning data pipelines and feature serving workflows. |
 | `file-and-partner-feed-ingestion` | Enterprise Data Engineering & Lakehouse | Guides agents through file-based and partner-feed ingestion workflows with quarantine mechanisms. |

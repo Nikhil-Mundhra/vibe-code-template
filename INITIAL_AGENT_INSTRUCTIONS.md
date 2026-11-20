@@ -29,7 +29,7 @@ This document specifies the initial bootstrapping checklist for any AI coding ag
 
 ## 1. Project Classification & Skill Trimming
 
-Do not keep all 38 skills in a specialized project. Assess the goal and trim the suite immediately:
+Do not keep all 39 skills in a specialized project. Assess the goal and trim the suite immediately:
 
 1. **Classify Project Type:**
    - **`web-app`:** React, Next.js, Astro, Tailwind, UI components, API routes.
