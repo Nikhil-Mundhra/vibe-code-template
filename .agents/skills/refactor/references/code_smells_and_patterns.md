@@ -258,6 +258,87 @@ Detailed catalog of common code smells, design pattern refactoring examples, and
 
 ---
 
+## UI / React & Module-Splitting Patterns
+
+### 11. God Component and Prop Drilling
+
+```diff
+# BAD: Parent component owns every child modal/filter state and prop-drills 12+ setters
+- function Workbench() {
+-   const [items, setItems] = useState([])
+-   const [typeFilter, setTypeFilter] = useState("ALL")
+-   const [expandedId, setExpandedId] = useState(null)
+-   const [copyState, setCopyState] = useState("idle")
+-   return (
+-     <>
+-       <ItemList items={items} expandedId={expandedId} onToggleExpand={setExpandedId} />
+-       <AuditLog items={items} typeFilter={typeFilter} onFilterChange={setTypeFilter} />
+-       <ExportModal copyState={copyState} onCopyChange={setCopyState} />
+-     </>
+-   )
+- }
+
+# GOOD: Push local UI state down into the extracted child components (State Colocation)
++ function Workbench() {
++   const [items, setItems] = useState([])
++   return (
++     <>
++       <ItemList items={items} />
++       <AuditLog items={items} />
++       <ExportModal items={items} />
++     </>
++   )
++ }
++
++ function AuditLog({ items }) {
++   const [typeFilter, setTypeFilter] = useState("ALL") // colocated with its only consumer
++   // ...
++ }
+```
+
+### 12. Monolithic File Split
+
+```diff
+# BAD: Extracted helpers import from the entry file (circular import) and break test imports
+- // sub/helpers.ts imports `Obligation` from `../PrototypeDemo`
+- // PrototypeDemo.tsx removes `export function parseTable` without re-exporting it
+- // -> Existing test importing `parseTable` from `./PrototypeDemo` fails!
+
+# GOOD: Strict one-way dependency DAG + re-export barrel in the original entry file
++ // 1. sub/types.ts      (zero local imports)
++ // 2. sub/constants.ts  (imports only from ./types)
++ // 3. sub/helpers.ts    (imports only from ./types, ./constants)
++ // 4. sub/SectionA.tsx  (imports from ./types, ./constants, ./helpers)
++ // 5. PrototypeDemo.tsx (coordinates sections & preserves public module boundary):
++ export type { Obligation } from "./sub/types"
++ export { SAMPLE_CSV } from "./sub/constants"
++ export { parseTable, buildBundle } from "./sub/helpers"
+```
+
+### 13. Inline Async Orchestration in UI
+
+```diff
+# BAD: Streaming reader, buffer parsing, and complex JSX mixed in a single 400-line component
+- function Coordinator() {
+-   const [streamText, setStreamText] = useState("")
+-   async function run() { /* 80-line fetch + ReadableStream + SSE parser */ }
+-   return <section>{/* 300 lines of trace cards, checklists, and ARIA tabs */}</section>
+- }
+
+# GOOD: Extract streaming/async controller into a custom hook; keep JSX focused and declarative
++ function useTransitionStream() {
++   // manages fetch, SSE buffer parsing, and streaming status
++   return { isStreaming, summary, trace, runTransition }
++ }
++
++ function Coordinator() {
++   const stream = useTransitionStream()
++   return <OrchestratorSection {...stream} />
++ }
+```
+
+---
+
 ## Common Refactoring Operations
 
 | Operation | Description | Primary Use Case |
@@ -269,4 +350,7 @@ Detailed catalog of common code smells, design pattern refactoring examples, and
 | **Replace Conditional with Polymorphism** | Replace `switch`/`if` branching with polymorphic method calls | Handle variant behaviors cleanly |
 | **Introduce Value Object** | Wrap primitive data in an immutable object with domain validation | Eliminate primitive obsession |
 | **Replace Magic Constant** | Replace literal values with descriptive named constants | Improve readability and maintainability |
+| **Colocate State (Push State Down)** | Move local UI state into extracted child components | Eliminate God Components and unnecessary prop-drilling |
+| **Split Module with Re-Export Barrel** | Extract types/constants/helpers bottom-up and re-export from entry file | Prevent circular dependencies and preserve caller/test imports |
+| **Extract Custom Hook** | Move stateful async/event orchestration into a reusable hook | Separate side-effect logic from UI presentation |
 | **Inline Method / Class** | Merge simple methods/classes back into callers when abstraction is overkill | Remove unnecessary complexity |
